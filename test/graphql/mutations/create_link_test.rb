@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class Mutations::CreateLinkTest < ActiveSupport::TestCase
-  def perform(**args)
+  def perform(user: nil, **args)
     Mutations::CreateLink.new(object: nil, field: nil, context: {}).resolve(args)
   end
 
